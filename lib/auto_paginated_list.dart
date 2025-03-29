@@ -224,7 +224,8 @@ class _AutoPaginatedListState<T> extends State<AutoPaginatedList<T>> {
               controller: _scrollController,
               shrinkWrap: widget.shrinkWrap,
               physics: widget.physics ?? const AlwaysScrollableScrollPhysics(),
-              itemCount: state.data.length +
+              itemCount:
+                  state.data.length +
                   1, // Add 1 for loading indicator or empty state
               itemBuilder: (context, index) {
                 if (index == state.data.length) {
@@ -245,7 +246,8 @@ class _AutoPaginatedListState<T> extends State<AutoPaginatedList<T>> {
                 // Render item
                 return widget.itemBuilder(context, state.data[index]);
               },
-              separatorBuilder: widget.separatorBuilder ??
+              separatorBuilder:
+                  widget.separatorBuilder ??
                   (context, index) => const SizedBox(), // Default separator
             );
           },
