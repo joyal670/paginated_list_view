@@ -1,7 +1,7 @@
 name: auto_paginated_list
 description: "AutoPaginatedList simplifies infinite scrolling in Flutter with Provider. It auto-fetches data, supports custom states, and ensures smooth performance."
-version: 0.0.6
-homepage: https://github.com/joyal670/Paginated-ListView
+version: 0.0.7
+homepage: https://github.com/joyal670/paginated_list_view
 
 environment:
   sdk: ^3.7.0
