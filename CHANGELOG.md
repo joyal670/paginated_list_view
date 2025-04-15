@@ -1,3 +1,7 @@
+## 0.0.9
+### Changes
+- Fixed example code.
+
 ## 0.0.8
 ### Changes
 - Fixed documentation and README formatting.

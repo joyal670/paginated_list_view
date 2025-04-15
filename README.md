@@ -32,8 +32,8 @@ You can customize the appearance using optional widgets for loading, error, and 
 check the /example folder in the repository.
 
 ```dart
-class PaginatedListScreen extends StatelessWidget {
-  const PaginatedListScreen({super.key});
+class AutoPaginatedListScreen extends StatelessWidget {
+  const AutoPaginatedListScreen({super.key});
 
   // Simulating an API call
   Future<List<String>> fetchItems(int page) async {
@@ -46,7 +46,7 @@ class PaginatedListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Paginated ListView')),
-      body: PaginatedListView<String>(
+      body: AutoPaginatedList<String>(
         fetchData: fetchItems,
         itemBuilder: (context, item) => ListTile(title: Text(item)),
         itemsPerPage: 10, //  Page size per page
